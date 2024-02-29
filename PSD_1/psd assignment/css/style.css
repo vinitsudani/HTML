@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1500px;
+    margin: 0 auto;
+}
+
+/* header start */
+.header{
+    background:url(/images/bg1.png);
+    background-size: 100% 100%;
+    padding-bottom: 110px;
+}
+.nav{
+    background-color: #303030;
+}
+.nav .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-ul .nav-list{
+    display: inline-block;
+    padding: 0 10px;
+}
+.nav .col a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Oswald";
+}
+.header .header-contain{
+    padding: 70px 0 ;
+    color: white;
+}
+.header .header-contain h1{
+    font-size: 8vw;
+    font-weight: 400;
+    font-family: "Oswald";
+    /* padding: 50px; */
+}
+.header .header-contain p{
+    width: 50%;
+    font-size: 2.3vw;
+    font-weight: 400;
+    font-family: "Montserrat";
+    /* padding: 50px; */
+}
+.header .header-contain button{
+    width: 15%;
+    padding: 15px 0;
+    border-radius: 4px;
+    background-color: #e8631c;
+    color: white;
+}
+.header .header-contain h1,p,button{
+    margin: 20px 0;
+}
+
+/* header end */
+
+
+/* sec1 */
+
+.sec1{
+    background-color: #e8631c;
+    padding: 30px 0;
+}
+.sec1 .sec1-header{
+    text-align: center;
+    color: white;
+    margin: 50px 0;
+}
+.sec1-header .sec1-h1{
+    font-size: clamp(20px,7vw,75px);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.sec1-header .sec1-para{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 30px;
+    font-size:  clamp(16px,2.4vw,30px);
+    font-weight: 400;
+
+}
+.sec1 .row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sec1 .row .col{
+    width: 30%;
+    background-color: #303030;
+}
+.sec1 .row .col .img{
+    width: 100%;
+    
+}
+.card-contain {
+    text-align: center;
+    color: white;
+    padding: 30px;
+  
+}
+.card-contain h2{
+    font-size: 75px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Oswald";
+}
+.card-contain p{
+    font-size: 20px;
+    font-size: clamp(16px,2vw,22px);
+    font-weight: 400;
+}
+/* sec1 end  */
+
+
+
+/* sec2 start  */
+.sec2{
+    background-color: #303030;
+    padding: 30px 0;
+}
+.sec2 .sec2-header{
+    text-align: center;
+    color: white;
+    margin: 50px 0;
+}
+.sec2-header .sec2-h1{
+    font-size: clamp(20px,7vw,75px);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.sec2-header .sec2-para{
+ width: 50%;
+ margin: 0 auto;
+font-size: 30px;
+font-size:  clamp(16px,2.4vw,30px);
+font-weight: 400;
+
+}
+.sec2 .row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sec2 .row .col{
+    width: 30%;
+    background-color: #e8631c;
+}
+.sec2 .row .col .img{ 
+    width: 30%;
+    margin: 20px auto;
+}
+.card-contain {
+    text-align: center;
+    color: white;
+    padding: 30px;
+  
+}
+.card-contain h2{
+    font-size: 37px;
+    font-size: clamp(20px,3vw,37px);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.card-contain p{
+font-size: 22px;
+font-size: clamp(16px,2vw,22px);
+font-weight: 400;
+}
+
+.button2{
+    width: 75%;
+    padding: 15px 0;
+    font-size: 2vh;
+    border-radius: 4px;
+    background-color: #303030;
+    color: white;
+}
+.sec2 h1{
+    font-size: 75px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Oswald";
+}
+.sec2 p{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+/* sec2 end  */
+
+
+
+/* sec3 start */
+.sec3{
+    background-color: #e8631c;
+}
+.sec3 .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec3 .col3{
+    width: 50%;
+}
+.sec3-contain{
+    padding: 50px;
+}
+.sec3 .col3 h1{
+    color: #ffffff;
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 700px;
+    font-family: oswald;
+}
+.sec3 .col3 p{
+    width: 80%;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 100;
+    font-family: "Montserrat";
+}
+.button3{
+    width: 30%;
+    padding: 15px 0;
+    font-size: 1.5vh;
+    border-radius: 4px;
+    background-color: #303030;
+    color: white;
+}
+.sec3 .col3 {
+    margin: 0px auto;
+    width: 100%;
+}
+/* sec3 end */
+
+
+
+
+/* sec4 start */
+.sec4{
+    background-color: #e8631c;
+}
+.sec4 .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec4 .col4{
+    width: 50%;
+}
+.sec4-contain{
+    padding: 50px;
+}
+.sec4 .col4 h1{
+    color: #ffffff;
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 700px;
+    font-family: oswald;
+}
+.sec4 .col4 p{
+    width: 80%;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 100;
+    font-family: "Montserrat";
+}
+.button4{
+    width: 30%;
+    padding: 15px 0;
+    font-size: 1.5vh;
+    border-radius: 4px;
+    background-color: #303030;
+    color: white;
+}
+.sec4 .col {
+    margin: 100px auto;
+    width: 50%;
+}
+/* sec4 end */
+
+
+
+
+/* sec5 start */
+.sec5{
+    background-color: #303030;
+    padding: 30px 0;
+}
+.sec5-header{
+    color: #ffffff;
+    text-align: center;
+}
+.sec5-header h1{
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Oswald";
+}
+.sec5-header p{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: "oswlad";
+}
+.sec5 .col1{
+    padding: 100px;
+    color: #ffffff;
+    font-size: 30px;
+
+}
+.sec5 .col2{
+    padding: 100px;
+    color: #ffffff;
+    font-size: 30px;
+}
+.sec5 .col3{
+    padding: 100px;
+    color: #ffffff;
+    font-size: 30px;
+}
+.sec5 .contant{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sec5 h1{
+    text-align: center;
+    font-size: 50px;
+}
+.sec5 h2{
+    text-align: center;
+    font-family: montserrat;
+}
+.sec5 h2{
+    font-size: 42px;
+    font-weight: lighter;
+    font-family: "oswald";
+}
+/* sec5 end */
+
+
+/* sec6 start */
+.sec6 {
+    background-image: url(/images/Image.png);
+    background-size: 100% 100%;
+    padding-bottom: 1000px;
+}
+.sec6-contain{
+    position: relative;
+}
+.sec6 p{
+    width: 100%;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 400px;
+}
+.sec6 h1{
+    font-size: 58px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 650px;
+    left: 32%;
+}
+/* sec6 end */
+
+
+/* sec7 start */
+.sec7{
+    background-color: #e8631c;
+    padding: 200px;
+}
+.sec7-contain{
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+.sec7-contain h1{
+    font-size: 7vh;
+    position: absolute;
+    bottom: 100px;
+    left: 500px;
+}
+.sec7-contain p{
+    font-size: 2.5vh;
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 13px;
+    left: 300px;
+}
+.sec7-contain input{
+    width: 30%;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    left: 350px;
+}
+.sec7-contain input{
+    font-size: 2.5vh;
+    padding: 20px;
+}
+.button5{
+    background-color: #303030;
+    padding: 12px;
+    color: #ffffff;
+    width: 10%;
+    position: absolute;
+    top: 30px;
+    right: 550px;
+}
+/* sec7 end */
