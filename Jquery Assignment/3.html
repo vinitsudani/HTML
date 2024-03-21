@@ -1,0 +1,80 @@
+How to create slider with animation?
+
+
+To create a slider with animation using jQuery, you can follow these general steps:
+
+1. HTML Structure: Define the HTML structure for your slider. Typically, it involves a container element wrapping
+multiple slides.
+
+2. CSS Styling: Style your slider elements to achieve the desired appearance and layout.
+
+3. JavaScript/jQuery: Write the jQuery code to handle the slider functionality, including navigation controls and
+animation effects.
+
+Here's a simple example of how you can create a basic slider with animation using jQuery:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Slider</title>
+<style>
+    .slider {
+        width: 500px;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    .slide {
+        width: 500px;
+        height: 200px;
+    }
+</style>
+</head>
+<body>
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide" style="background-color: #ffcc00;">Slide 1</div>
+        <div class="slide" style="background-color: #00ccff;">Slide 2</div>
+        <div class="slide" style="background-color: #cc00ff;">Slide 3</div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var slideCount = $('.slides .slide').length;
+        var slideWidth = $('.slide').width();
+        var currentIndex = 0;
+
+        function slide() {
+            $('.slides').animate({ 'margin-left': -currentIndex * slideWidth }, 500);
+        }
+
+        $('.prev').click(function() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                slide();
+            }
+        });
+
+        $('.next').click(function() {
+            if (currentIndex < slideCount - 1) {
+                currentIndex++;
+                slide();
+            }
+        });
+    });
+</script>
+
+<button class="prev">Previous</button>
+<button class="next">Next</button>
+
+</body>
+</html>

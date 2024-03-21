@@ -1,0 +1,55 @@
+How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery ,JQuery Animation?
+
+-> To apply CSS using jQuery, you can use the .css() method. This method allows you to get or set CSS properties of
+selected elements. Here's an example of how to apply CSS using jQuery:
+
+-> To add or remove classes using jQuery, you can use the .addClass() and .removeClass() methods respectively. These
+methods allow you to add or remove one or more classes from selected elements. Here's how you can do it:
+
+-> For jQuery animation, you can use methods like .animate(), .slideDown(), .slideUp(), .fadeIn(), .fadeOut(), etc.
+These methods allow you to create various animations on selected elements. Here's an example of jQuery animation:
+
+-> These are just some basic examples. jQuery provides a wide range of methods and options for CSS manipulation and
+animation, allowing you to create complex effects and interactions on your web pages.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Set CSS properties
+        $('selector').css('property', 'value');
+
+        // Example: Change the color of paragraphs with class 'text' to red
+        $('.text').css('color', 'red');
+
+        // Add a class
+        $('selector').addClass('className');
+
+        // Remove a class
+        $('selector').removeClass('className');
+
+        // Example: Add class 'highlight' to paragraphs with class 'text' and then remove it after 2 seconds
+        $('.text').addClass('highlight');
+        setTimeout(function() {
+            $('.text').removeClass('highlight');
+        }, 2000);
+
+        // Animate an element's width and opacity
+        $('selector').animate({
+            width: '200px',
+            opacity: 0.5
+        }, 1000); // duration in milliseconds
+
+        // Example: Slide up a paragraph with class 'text' when clicked
+        $('.text').click(function() {
+            $(this).slideUp();
+        });
+
+    </script>
+</body>
+</html>
