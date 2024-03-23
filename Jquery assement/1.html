@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  form label {
+  display: inline-block;
+  width: 150px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  margin-left: 5px;
+}
+
+label.error {
+  display: inline;
+}
+    </style>
+</head>
+<body>
+    <!-- First Form -->
+<h2>Example 1:</h2>
+<form id="first_form" method="post" action="">
+  <div>
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" placeholder="Enter Your Frist Name"></input>
+  </div>
+  <div>
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" placeholder="Enter Your Last Name"></input>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="it should contain @"></input>
+  </div>
+  <div>
+    <label for="mobile">Mobile No:</label>
+    <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile No." maxlength="10" minlength="0"></input>
+  </div>
+  <div>
+    <label for="gender">Gender:</label>
+    <input type="checkbox" id="gender" name="gender">Male</input>
+    <input type="checkbox" id="gender" name="gender">Female</input>
+  </div>
+  <div>
+    <label for="dob">Date of Birth:</label>
+    <input type="number" id="dob" name="dob" placeholder="mm/dd/yy" maxlength="10" minlength="0"></input>
+  </div>
+  <div>
+    <label for="Address">Address:</label>
+    <textarea id="Address" name="Address" rows="4" cols="50"></textarea>
+  </div>
+  <div>
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city"></input>
+  </div>
+  <div>
+    <label for="ap">Area Pin:</label>
+    <input type="text" id="ap" name="ap"></input>
+  </div>
+  <div>
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state"></input>
+  </div>
+  <div>
+    <label for="Qualification">Qualification:</label>
+    <input type="checkbox" id="Qualification" name="Qualification">Computer Science</input>
+    <input type="checkbox" id="Qualification" name="Qualification">Information Technology</input>
+    <input type="checkbox" id="Qualification" name="Qualification">Computer Architeture</input>
+    <input type="checkbox" id="Qualification" name="Qualification">Tele Communication</input>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter Your Password"></input>
+  </div>
+  <div>
+    <input type="submit" value="Submit" />
+  </div>
+</form>
+
+
+
+  <script>
+    $(document).ready(function() {
+
+$('#first_form').submit(function(e) {
+  e.preventDefault();
+  var first_name = $('#first_name').val();
+  var last_name = $('#last_name').val();
+  var email = $('#email').val();
+  var mobile = $('#mobile').val();
+  var gender = $('#gender').val();
+  var dob = $('#dob').val();
+  var Address = $('#Address').val();
+  var city = $('#city').val();
+  var state = $('#state').val();
+  var Qualification = $('#Qualification').val();
+  var password = $('#password').val();
+
+  $(".error").remove();
+
+  if (first_name.length < 1) {
+    $('#first_name').after('<span class="error">This field is required</span>');
+  }
+  if (last_name.length < 1) {
+    $('#last_name').after('<span class="error">This field is required</span>');
+  }
+  if (email.length < 1) {
+    // $('#email').after('<span class="error">This field is required</span>');
+  }
+  if (mobile.length < 10) {
+    $('#mobile').after('<span class="error">This field is required</span>');
+  }
+  if (gender.length < 1) {
+    $('#gender').after('<span class="error">This field is required</span>');
+  }
+  if (dob.length < 1) {
+    $('#dob').after('<span class="error">This field is required</span>');
+  }
+  if (Address.length < 1) {
+    $('#Address').after('<span class="error">This field is required</span>');
+  }
+  if (city.length < 1) {
+    $('#city').after('<span class="error">This field is required</span>');
+  }
+  if (state.length < 1) {
+    $('#state').after('<span class="error">This field is required</span>');
+  }
+  if (Qualification.length < 1) {
+    $('#Qualification').after('<span class="error">This field is required</span>');
+  }
+  if (password.length < 1) {
+    $('#password').after('<span class="error">This field is required</span>');
+  }else {
+    var regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/;
+    var validEmail = regEx.test(email);
+    if (!validEmail) {
+      // $('#email').after('<span class="error">Enter a valid email</span>');
+    }
+  }
+  if (password.length < 8) {
+    // $('#password').after('<span class="error">Password must be at least 8 characters long</span>');
+    function myFunction() {
+  alert("I am an alert box!");
+}
+  }
+});
+});
+  </script>
+</form>
+</body>
+</html>
